@@ -142,7 +142,7 @@ label {
   flex-direction: column;
 }
 .input-error {
-  border: 2px solid #630b22;
+  border: 2px solid red;
 }
 .map {
   width: 50%;
