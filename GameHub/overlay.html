@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Homepage</title>
+    <meta
+      name="description"
+      content="Overlay for logging in to your personal account profile."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="styles/overlay.css" rel="stylesheet" />
+    <link href="styles/core.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <script src="GameHub/js/overlay.js"></script>
+  </head>
+  <body>
+    <div class="overlay">
+      <div class="loginbox">
+        <h2 style="text-transform: uppercase; margin-bottom: 15px">Sign up</h2>
+        <p style="font-weight: 600">
+          By continuing you agree to our
+          <a class="overlaylink">User Agreement</a> and
+          <a class="overlaylink">privacy policy</a>.
+        </p>
+        <a class="buttonlink" href="profile.html"
+          ><button class="box">Continue with Facebook</button></a
+        >
+        <a href="profile.html" class="buttonlink">
+          <button class="box">Continue with Google</button>
+        </a>
+        <h3>OR</h3>
+        <input type="text" name="email" placeholder="EMAIL" />
+        <a href="profile.html"><button class="submit">Continue</button></a>
+        <p>
+          Already a user? <a class="overlaylink" href="profile.html">LOG IN</a>
+        </p>
+      </div>
+    </div>
+    <!-- HEADER START -->
+    <header>
+      <div class="logo">
+        <a href="index.html">
+          <img
+            src="images/indeximg/GameHublogocomp.png"
+            alt="Gamehub's company logo"
+          />
+        </a>
+      </div>
+      <div class="search">
+        <input
+          class="searchbar"
+          placeholder="Search for products"
+          type="text"
+        />
+        <i
+          style="
+            cursor: pointer;
+            color: #1b203d;
+            font-size: 40px;
+            position: absolute;
+            bottom: 5px;
+            right: 5px;
+          "
+          class="material-icons"
+        >
+          search
+        </i>
+      </div>
+      <div class="user">
+        <div class="headusericon">
+          <a href="overlay.html"
+            ><i class="material-icons"> account_circle </i></a
+          >
+        </div>
+        <div class="usericontextbox">
+          <span class="usericontext"
+            ><a href="overlay.html"> Sign in/up</a></span
+          >
+        </div>
+        <div class="headcarticon">
+          <a href="cart.html">
+            <i class="material-icons"> shopping_cart</i>
+          </a>
+        </div>
+      </div>
+      <div class="navbar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html">Store</a></li>
+          <li><a href="profile.html">Profile</a></li>
+          <li><a href="contact.html">contact us</a></li>
+          <li style="background-color: #ffab40">
+            <a href="#" style="color: #1b203d">GameHub+ </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <!-- HEADER END -->
+    <main>
+      <!-- TRENDING PRODUCTS -->
+      <h1>trending products</h1>
+      <p>
+        The best offers, new games. AAA titles and a wide variety of used games
+        heavily discounted.
+      </p>
+      <div class="trendinggrid">
+        <div class="phototag">
+          <img
+            src="images/indeximg/acvalhallaartcomp.jpg"
+            alt="Assassins creed Valhalla cover art."
+            class="trendgridAC"
+          />
+          <p>AC: Valhalla</p>
+          <div class="pricetag">
+            <p>With plus</p>
+            <div class="arialprice">
+              <p>$65.99</p>
+            </div>
+          </div>
+        </div>
+        <div class="phototag">
+          <img
+            src="images/indeximg/tla2artcomp.jpg"
+            alt="The last of us 2 cover art."
+            class="trendgridTLOU"
+          />
+          <p>The last of us II</p>
+          <div class="pricetag">
+            <p>With plus</p>
+            <div class="arialprice">
+              <p>$49.99</p>
+            </div>
+          </div>
+        </div>
+        <div class="phototag">
+          <img
+            src="images/indeximg/ghostsoftsushimacomp.jpg"
+            alt="Ghosts of Tsushima cover art."
+            class="trendgridGhosts"
+          />
+          <p>Ghost of Tsushima</p>
+          <div class="pricetag">
+            <p>With plus</p>
+            <div class="arialprice">
+              <p>$59.99</p>
+            </div>
+          </div>
+        </div>
+        <div class="phototag">
+          <img
+            src="images/indeximg/fallcomp.jpg"
+            alt="Fallguys cover art."
+            class="trendgridfall"
+          />
+          <p>Fall Guys (PC)</p>
+          <div class="pricetag">
+            <p>with plus</p>
+            <div class="arialprice">
+              <p>$9.50</p>
+            </div>
+          </div>
+        </div>
+        <div class="phototag">
+          <img
+            src="images/indeximg/gh3comp.jpg"
+            alt="Guitar Hero 3 cover art."
+            class="trendgridgh3"
+          />
+          <p>Guitar Hero 3</p>
+          <div class="pricetag">
+            <p>With plus</p>
+            <div class="arialprice">
+              <p>$69.99</p>
+            </div>
+          </div>
+        </div>
+        <div class="phototag">
+          <img
+            src="images/indeximg/sm64artcomp.jpg"
+            alt="Super Mario 64 cover art."
+            class="trendgridSM64"
+          />
+          <p>Super mario 64</p>
+          <div class="pricetag">
+            <p>With plus</p>
+            <div class="arialprice">
+              <p>$13.65</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="linebreak"></div>
+    </main>
+    <!-- MAIN CONTENT END -->
+    <!-- SITE FOOTER -->
+    <footer>
+      <div class="footerpart1">
+        <h3>about</h3>
+        <p class="reverse">
+          GameHub is a marketplace where gamers from all over the world can
+          safely perform private transactions, at the best prices available.
+        </p>
+        <br />
+        <p class="reverse">
+          We play better together. <br />
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. A recusandae
+          repellat quibusdam tenetur. Modi, quae! Minima, accusantium molestias
+          autem sapiente nesciunt dolores veniam soluta magnam ad animi tempore
+          dolorum natus?Lorem ipsum dolor sit, amet consectetur adipisicing
+          elit. Natus sequi facere.
+        </p>
+      </div>
+      <div class="footerpart2">
+        <h3>Our locations</h3>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.5894413443975!2d10.76561588367972!3d59.92917384806806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46416e6a11bf7ad9%3A0x49c39aa2e4621b85!2sD%C3%A6lenenggata%2040A%2C%200567%20Oslo!5e0!3m2!1sno!2sno!4v1609765479601!5m2!1sno!2sno"
+          width="100%"
+          height="300"
+          frameborder="0"
+          style="border: 0"
+          allowfullscreen=""
+          aria-hidden="false"
+          tabindex="0"
+        ></iframe>
+      </div>
+      <div class="footerpart3">
+        <h3>Follow</h3>
+        <ul class="footerlist">
+          <li class="followlist">Twitter</li>
+          <li class="followlist">Instagram</li>
+          <li class="followlist">Facebook</li>
+          <li class="followlist">Newsletter</li>
+        </ul>
+      </div>
+      <div class="footercopy">
+        <p class="cp-text">© Copyright 2020 GameHub. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,269 @@
+.linebreak {
+  border-top: #b1b1b1;
+  border-width: 2px 0px 0px 0px;
+  border-style: solid;
+  margin: 60px 0px;
+  opacity: 0.7;
+}
+.trendinggrid {
+  display: grid;
+  grid-template-areas: "1 2 3 4 5 6";
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 40px;
+  width: calc(100%-80px);
+  height: auto;
+  margin-top: 15px;
+}
+.trendgridAC {
+  grid-area: 1;
+}
+.trendgridTLOU {
+  grid-area: 2;
+}
+.trendgridGhosts {
+  grid-area: 3;
+}
+.trendgridfall {
+  grid-area: 4;
+}
+.trendgridGH3 {
+  grid-area: 5;
+}
+.trendgridSM64 {
+  grid-area: 6;
+}
+.phototag p {
+  text-transform: uppercase;
+  font-family: "RalewayBold", sans-serif;
+  margin: 0;
+}
+.pricetag p {
+  text-transform: uppercase;
+  font-family: "RalewayBold", sans-serif;
+  margin: 0;
+  font-size: 15px;
+  color: #4e4e4e;
+  letter-spacing: 0px;
+  margin-top: 5px;
+}
+.arialprice p {
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-weight: 700;
+  font-size: 25px;
+  color: #1b203d;
+  letter-spacing: -1px;
+  width: 100%;
+}
+.arialprice p:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.phototag img {
+  width: 100%;
+  height: auto;
+  min-width: 100px;
+}
+.profilegrid {
+  display: grid;
+  grid-template-areas: "1 2 3";
+  grid-template-columns: 1fr 1.5fr 1fr;
+  width: 100%;
+  grid-gap: 40px;
+  height: auto;
+}
+.col1 {
+  grid-area: 1;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+.col2 {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  text-align: center;
+  white-space: nowrap;
+}
+.col3 {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+.profile {
+  padding: 10px;
+  border-style: solid;
+  border-color: #1b203d;
+  border-radius: 8px;
+  margin-top: 15px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+}
+.profile img {
+  float: left;
+  border-radius: 90px;
+  border-width: 3px;
+  border-style: solid;
+  margin-right: 5px;
+}
+.cart {
+  border-style: solid;
+  border-color: #1b203d;
+  border-radius: 8px;
+  margin-top: 15px;
+  padding: 10px;
+  text-align: center;
+  white-space: nowrap;
+  padding: 15px 30px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+}
+.cartproduct {
+  border-style: solid;
+  border-color: #1b203d;
+  border-radius: 8px;
+  border-width: 2px;
+  text-align: left;
+  padding: 0px 5px;
+  display: flex;
+  flex-direction: row;
+}
+.col2 i {
+  font-size: 145px;
+  color: #1b203d;
+  margin: auto;
+}
+.cart i {
+  font-size: 80px;
+  color: #1b203d;
+}
+
+/* OVERLAY + MEDIAQUERYS */
+@media only screen and (max-width: 680px) {
+  .loginbox {
+    background-image: none !important;
+    padding: 30px !important;
+  }
+  .loginbox h3 {
+    padding: 0 !important;
+    margin: 4px auto !important;
+  }
+  .box {
+    margin-top: 10px !important;
+  }
+  .submit {
+    margin-top: 10px !important;
+  }
+}
+@media only screen and (max-height: 840px) {
+  .loginbox {
+    padding: 70px !important;
+    display: none;
+    margin: 0px !important;
+    width: auto !important;
+    height: 100%;
+    border-radius: 0px !important;
+    padding: 30px !important;
+    background-image: none !important;
+  }
+}
+.overlay {
+  background-color: rgba(0, 0, 0, 0.692);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+.loginbox {
+  display: flex;
+  margin: auto;
+  width: 40%;
+  background-color: #fff;
+  opacity: 1;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  border-radius: 25px;
+  flex-direction: column;
+  padding: 120px 120px;
+  padding-left: 250px;
+  background-image: url("/images/indeximg/video-game-pile.png");
+  background-size: 175px 100%;
+  background-repeat: no-repeat;
+}
+.box {
+  margin-top: 30px;
+  padding: 20px;
+  font-size: 20px;
+  background-color: #ffffff;
+  color: #1b203d;
+  border-radius: 7px;
+  border-width: 2px;
+  border-color: #1b203d;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+  border-style: solid;
+  width: 100%;
+}
+.box:hover {
+  background-color: #1b203d;
+  color: #ffffff;
+  cursor: pointer;
+}
+.loginbox h2 {
+  text-transform: none;
+  margin-bottom: 6px;
+  font-size: 30px;
+  margin-top: 0px;
+}
+.loginbox p {
+  font-weight: 100;
+  text-transform: none;
+  font-family: "Raleway", sans-serif;
+  font-size: 22px;
+  padding: 0;
+}
+a.overlaylink {
+  color: #4d5c8c;
+  mix-blend-mode: hard-light;
+}
+.loginbox h3 {
+  color: #1b203d;
+  margin: auto;
+  padding: 25px;
+  text-align: center;
+}
+.loginbox input {
+  background-color: #a4a2a228;
+  margin-top: 0px;
+  padding: 10px;
+  border-radius: 7px;
+  width: auto;
+  font-size: 16px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+}
+.loginbox ::placeholder {
+  color: #000;
+  padding: 5px;
+  font-size: 16px;
+}
+.submit {
+  background-color: #1b203d;
+  color: #fff;
+  border-radius: 40px;
+  border-width: 2px;
+  border-color: #1b203d;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+  border-style: solid;
+  margin-top: 30px;
+  padding: 20px;
+  font-size: 20px;
+  margin-bottom: 5px;
+  font-family: "RalewayBold", sans-serif;
+  letter-spacing: 3px;
+  cursor: pointer;
+  width: 100%;
+}
+.loginbox img {
+  width: 50px;
+  height: 100%;
+  left: 0;
+}
+/* OVERLAY-END */

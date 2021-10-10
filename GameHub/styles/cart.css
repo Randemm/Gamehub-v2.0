@@ -1,0 +1,114 @@
+.cart {
+  padding: 35px;
+  box-shadow: 0px 3px 5px rgba(0, 5, 19, 0.9);
+}
+.cart-item {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 15px;
+  background-color: rgba(128, 128, 128, 0.226);
+  border-radius: 6px;
+  justify-content: space-between;
+}
+.cart-item img {
+  border-radius: 6px;
+  max-width: 125px;
+  max-height: 125px;
+}
+.cartprice {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  float: right;
+  color: black;
+  margin: 85px 50px 0px 0px;
+  float: right;
+}
+.cart-item-name {
+  margin: 5px 0px;
+  font-family: "Calibri", sans-serif;
+  font-size: 30px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin: 25px 100px 0px 0px;
+  font-weight: 800;
+  color: #1b203d;
+}
+.cart-list {
+  margin: 0px 2px 15px 2px;
+}
+.cartmessage h1 {
+  margin: 0px 0px 15px 0px;
+}
+.checkout {
+  color: #fbfcff;
+  background-color: #1b203d;
+  border: solid;
+  border-radius: 6px;
+  font-weight: bold;
+  height: 50px;
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  padding: 7px;
+  margin: auto;
+  width: 50%;
+  display: block;
+  text-align: center;
+}
+.browse {
+  color: #fbfcff;
+  background-color: #1b203d;
+  border: solid;
+  border-radius: 6px;
+  font-weight: bold;
+  height: 50px;
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  padding: 7px;
+  margin: 15px;
+  width: 50%;
+  display: block;
+  text-align: center;
+}
+.checkout:hover {
+  cursor: pointer;
+}
+.total {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 10px 50px 10px 10px;
+  font-weight: bolder;
+  font-size: 20px;
+  float: right;
+  display: none;
+}
+@media only screen and (max-width: 1025px) {
+  .cart-item {
+    justify-content: space-between;
+  }
+  .cart-item img {
+    max-width: 75px;
+    max-height: 125px;
+  }
+  .cartprice {
+    margin: 50px;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .cart-item {
+    justify-content: flex-start;
+  }
+  .cart-item img {
+    max-width: 50px;
+    max-height: 85px;
+  }
+  .cartprice {
+    position: absolute;
+    right: 70px;
+    margin: 35px 0px 0px 0px;
+  }
+  .cart-item-name {
+    font-size: 20px;
+    letter-spacing: normal;
+    margin: 5px;
+  }
+}

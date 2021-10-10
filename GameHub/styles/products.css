@@ -1,0 +1,259 @@
+footer {
+  display: flex;
+  padding: 0 12% 0 12%;
+  background-color: #1b203d;
+}
+.productwrap {
+  display: grid;
+  grid-template-areas: "1 2";
+  grid-template-columns: 2.5fr 1fr;
+  grid-gap: 20px;
+  width: calc(100%-80px);
+  height: auto;
+}
+.description {
+  grid-area: 1;
+}
+.description p {
+  margin-bottom: 15px;
+}
+.gamecover {
+  border-radius: 12px;
+  margin-top: 33.5px;
+  width: 100%;
+  height: auto;
+  min-width: 200px;
+}
+.youtubeembed {
+  display: inline;
+}
+.description p {
+  font-weight: 500;
+  letter-spacing: 1px;
+  padding-top: 5px;
+}
+.price-arial {
+  font-weight: 800;
+  font-size: 25px;
+  padding-left: 20px;
+  letter-spacing: -1px;
+  width: 100%;
+  margin: auto;
+  text-align: left;
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;
+}
+span {
+  font-weight: 800;
+  font-size: 15px;
+  padding-left: 20px;
+  letter-spacing: -1px;
+  width: 100%;
+  margin: auto;
+  text-align: left;
+  display: block;
+  font-family: "RalewayBold", sans-serif;
+}
+.cart {
+  border: 3px solid #1b203d;
+  -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+  border-radius: 6px;
+  max-width: 600px;
+  min-width: 200px;
+  max-height: 650px;
+  padding: 20px;
+  margin: auto;
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  background-color: #fbfcff;
+  font-family: "Raleway", sans-serif;
+  display: none;
+  z-index: 3;
+  overflow-y: scroll;
+}
+.total {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 15px 0px 10px 120px;
+  font-weight: bolder;
+  font-size: 20px;
+}
+.checkout {
+  color: #fbfcff;
+  background-color: #1b203d;
+  border: solid;
+  border-radius: 6px;
+  font-weight: bold;
+  height: 20px;
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  padding: 7px;
+  margin: auto;
+  width: 75%;
+  display: block;
+  text-align: center;
+}
+
+.cartheader {
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 25px;
+  text-align: center;
+  border-bottom: #1b203d solid;
+  margin-bottom: 20px;
+}
+.addcartkey {
+  border-radius: 12px;
+  height: 65px;
+  margin: -10px 25px 15px 15px;
+  font-family: "RalewayBold", sans-serif;
+  display: grid;
+  grid-template-columns: 4fr 1.4fr;
+  grid-template-areas: "3 4";
+  color: #1b203d;
+  background-color: #f4f6fc;
+  border-style: solid;
+  border-color: #1b203d;
+  border-width: 2px;
+  float: right;
+}
+.cartkeytext {
+  grid-area: text;
+}
+.cartkeyicon {
+  grid-area: icon;
+}
+.addcartkey p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  color: #1b203d;
+  letter-spacing: -1px;
+  width: 100%;
+  margin: auto;
+  text-align: left;
+  padding-top: 5px;
+  padding-left: 20px;
+}
+.addcartkey i {
+  padding-top: 15px;
+  font-size: 35px;
+}
+.pricetag p {
+  text-transform: uppercase;
+  font-family: "RalewayBold", sans-serif;
+  margin: 0;
+  font-size: 15px;
+  color: #b2b2b2;
+  letter-spacing: 0px;
+  margin-top: 5px;
+}
+a {
+  text-decoration: none;
+}
+
+a i {
+  text-decoration: none;
+}
+div img {
+  width: 100%;
+  height: auto;
+  min-width: 100px;
+}
+@media only screen and (max-width: 1025px) {
+  .gamecover {
+    display: none;
+  }
+  .productwrap {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  iframe {
+    width: 80%;
+    height: auto;
+    margin-left: 10%;
+    margin-top: 20px;
+    min-height: 300px;
+  }
+  .youtubeembed {
+    margin: auto;
+  }
+  main {
+    margin-left: 20%;
+  }
+  .othergames {
+    display: none !important;
+  }
+  h2 {
+    display: none !important;
+  }
+}
+
+.area2 {
+  grid-area: 3;
+}
+.area1 {
+  grid-area: 4;
+}
+.description a :hover {
+  cursor: pointer;
+  background-color: #1b203d;
+  color: #f4f6fc;
+  border-radius: 12px;
+}
+.othergames {
+  display: grid;
+  grid-template-areas: "1 2 3 4 5 6 7";
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+  width: calc(100%-80px);
+  height: auto;
+}
+.phototag p {
+  font-family: "RalewayBold", sans-serif;
+  text-transform: uppercase;
+  font-weight: 900;
+  text-align: center;
+  font-size: 100%;
+}
+.phototag p:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.othergamesMW2 {
+  grid-area: 1;
+}
+.othergamesOW {
+  grid-area: 2;
+}
+.othergamesFIFA {
+  grid-area: 3;
+}
+.othergamesGTA {
+  grid-area: 4;
+}
+.othergamesSKYRIM {
+  grid-area: 5;
+}
+.trendgridTLOU {
+  grid-area: 6;
+}
+.trendgridGHOSTS {
+  grid-area: 7;
+}
+
+/* ULTRAWIDE YOUTUBE BOX */
+@media only screen and (min-width: 2000px) {
+  .youtubeembed iframe {
+    height: 66%;
+    width: 76%;
+    margin: 0px auto;
+  }
+  .youtubeembed {
+    height: 100%;
+    display: flex;
+  }
+}
+/* ULTRAWIDE YOUTUBE BOX */

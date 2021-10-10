@@ -1,0 +1,163 @@
+@font-face {
+  font-family: Raleway;
+  src: url("https://fonts.google.com/specimen/Raleway");
+}
+
+main {
+  display: flex;
+}
+button {
+  background-color: #1b203d;
+  color: #fbfcff;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  height: 50px;
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  width: 30%;
+  margin: 15px auto;
+  -webkit-transition: font-size 0.3s ease;
+  -moz-transition: font-size 0.3s ease;
+  -o-transition: font-size 0.3s ease;
+  transition: font-size 0.3s ease;
+}
+button:hover {
+  cursor: pointer;
+  font-size: 18px;
+}
+span {
+  color: red;
+  padding: 5px;
+  font-size: 16px;
+  font-family: "Raeway", sans-serif;
+}
+
+p {
+  margin-bottom: 15px !important;
+}
+.contactinfo {
+  background-color: #fbfcff;
+  border-radius: 12px;
+  border-color: rgba(27, 32, 61);
+  border-style: solid;
+  border-width: 2px;
+  height: 55px;
+  margin: 0.5% 0%;
+  box-shadow: 5px 8px 5px rgba(0, 0, 0, 16%);
+  font-size: 20px;
+  padding-left: 1%;
+  font-family: "Raleway", sans-serif;
+  font-weight: normal;
+  color: #1b203d;
+}
+.submit {
+  background-color: #1b203d;
+  color: #fbfcff;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  height: 50px;
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  width: 50%;
+  margin: 15px auto;
+  font-size: 18px;
+  -webkit-transition: font-size 0.3s ease;
+  -moz-transition: font-size 0.3s ease;
+  -o-transition: font-size 0.3s ease;
+  transition: font-size 0.3s ease;
+}
+.submit:hover {
+  cursor: pointer;
+  font-size: 22px;
+}
+
+.userquestion {
+  background-color: #fbfcff;
+  border-radius: 12px;
+  border-style: solid;
+  border-width: 2px;
+  height: 200px;
+  box-shadow: 5px 8px 5px rgba(0, 0, 9, 16%);
+  font-size: 20px;
+  font-family: "Raleway", sans-serif;
+  font-weight: normal;
+  padding-left: 1%;
+  padding-top: 1%;
+  text-align: left;
+  vertical-align: top;
+}
+textarea {
+  background-color: #fbfcff;
+  border-radius: 12px;
+  border: solid;
+  width: 100%;
+  border-width: 3px;
+  height: 200px;
+  box-shadow: 5px 8px 5px rgba(0, 0, 0, 16%);
+  font-size: 20px;
+  font-family: "Raleway", sans-serif;
+  font-weight: normal;
+  padding-left: 1%;
+  padding-top: 1%;
+  text-align: left;
+  vertical-align: top;
+}
+/* Fjern outlines på input/forms   */
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+fieldset {
+  border: none;
+  padding: 0px;
+  max-height: 100%;
+  display: inline-block;
+}
+::placeholder {
+  font-size: 20px;
+  color: #1b203d;
+}
+.container {
+  display: grid;
+  grid-gap: 1em;
+  grid-template-areas: "contactform information";
+  grid-template-columns: auto, auto;
+  width: 100%;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+label {
+  font-family: "Raleway", sans-serif;
+  padding: 5px;
+}
+.contactform {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.map {
+  width: 50%;
+  margin-left: 50px;
+}
+@media only screen and (max-width: 1690px) {
+  main {
+    flex-direction: column;
+    padding: 0% 5% 0% 5%;
+  }
+  .map {
+    width: 100%;
+    margin-left: 0px;
+  }
+  .contactform {
+    width: 100%;
+  }
+  button {
+    width: 200px;
+  }
+}

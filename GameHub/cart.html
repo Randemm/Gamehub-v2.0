@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Homepage</title>
+    <meta
+      name="description"
+      content="Homepage of Gamehub. A marketplace for buying and selling videogames."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="styles/cart.css" rel="stylesheet" />
+    <link href="styles/core.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+  </head>
+
+  <body>
+    <!-- HEADER START -->
+    <header>
+      <!-- Hamburger -->
+      <div class="hamburgermenu" id="hamburger-menu">
+        <ul>
+          <a href="index.html"><li>Home</li></a>
+          <a href="index.html"><li>Store</li></a>
+          <a href="profile.html"><li>Profile</li></a>
+          <a href="contact.html"><li>Contact us</li></a>
+          <li style="background-color: #ffab40">
+            <a href="#" style="color: #1b203d">GameHub+</a>
+          </li>
+        </ul>
+      </div>
+      <div class="hamburger" id="hamburger-menu2">
+        <a onclick="check()">
+          <i class="material-icons"> menu </i>
+        </a>
+      </div>
+      <!-- HAMBURGER END -->
+      <div class="logo">
+        <a href="index.html">
+          <img
+            src="images/indeximg/GameHublogocomp.png"
+            alt="Gamehub's company logo"
+          />
+        </a>
+      </div>
+      <div class="search">
+        <input
+          class="searchbar"
+          placeholder="Search for products"
+          type="text"
+        />
+        <i
+          style="
+            cursor: pointer;
+            color: #1b203d;
+            font-size: 40px;
+            position: absolute;
+            bottom: 5px;
+            right: 5px;
+          "
+          class="material-icons"
+        >
+          search
+        </i>
+      </div>
+      <div class="user">
+        <div class="headusericon">
+          <a href="overlay.html"
+            ><i class="material-icons"> account_circle </i></a
+          >
+        </div>
+        <div class="usericontextbox">
+          <span class="usericontext"
+            ><a href="overlay.html"> Sign in/up</a></span
+          >
+        </div>
+        <div class="headcarticon">
+          <a href="cart.html">
+            <i class="material-icons"> shopping_cart</i>
+          </a>
+        </div>
+      </div>
+      <div class="navbar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html">Store</a></li>
+          <li><a href="profile.html">Profile</a></li>
+          <li><a href="contact.html">contact us</a></li>
+          <li style="background-color: #ffab40">
+            <a href="#" style="color: #1b203d">GameHub+ </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <div class="cart">
+        <div class="cartmessage">
+          <h1>Shopping cart</h1>
+          <p>
+            Your cart is empty at the moment. Click the button to get some
+            personalized offers.
+          </p>
+        </div>
+        <div class="cart-list"></div>
+        <div class="total">Total:</div>
+        <button onclick="deleteCartList()" class="checkout">Checkout</button>
+      </div>
+    </main>
+    <!-- FOOTER -->
+    <footer>
+      <div class="footerpart1">
+        <h3>about</h3>
+        <p class="reverse">
+          GameHub is a marketplace where gamers from all over the world can
+          safely perform private transactions, at the best prices available.
+        </p>
+        <br />
+        <p class="reverse">
+          We play better together. <br />
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. A recusandae
+          repellat quibusdam tenetur. Modi, quae! Minima, accusantium molestias
+          autem sapiente nesciunt dolores veniam soluta magnam ad animi tempore
+          dolorum natus?Lorem ipsum dolor sit, amet consectetur adipisicing
+          elit. Natus sequi facere.
+        </p>
+      </div>
+      <div class="footerpart2">
+        <h3>Our locations</h3>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.5894413443975!2d10.76561588367972!3d59.92917384806806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46416e6a11bf7ad9%3A0x49c39aa2e4621b85!2sD%C3%A6lenenggata%2040A%2C%200567%20Oslo!5e0!3m2!1sno!2sno!4v1609765479601!5m2!1sno!2sno"
+          width="100%"
+          height="300"
+          frameborder="0"
+          style="border: 0"
+          allowfullscreen=""
+          aria-hidden="false"
+          tabindex="0"
+        ></iframe>
+      </div>
+      <div class="footerpart3">
+        <h3>Follow</h3>
+        <ul class="footerlist">
+          <li class="followlist">Twitter</li>
+          <li class="followlist">Instagram</li>
+          <li class="followlist">Facebook</li>
+          <li class="followlist">Newsletter</li>
+        </ul>
+      </div>
+      <div class="footercopy">
+        <p class="cp-text">© Copyright 2020 GameHub. All rights reserved.</p>
+      </div>
+    </footer>
+    <script type="module" src="js/cart.js"></script>
+    <script src="js/hamburger.js"></script>
+  </body>
+</html>

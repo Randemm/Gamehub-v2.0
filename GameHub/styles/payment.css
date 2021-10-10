@@ -1,0 +1,120 @@
+.paywrap {
+  display: grid;
+  grid-template-areas: "1 2";
+  grid-template-columns: 1fr 1fr;
+  box-shadow: 0px 9px 19px rgba(0, 0, 0, 0.45);
+  background-image: url("/images/dinobackground.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+main {
+  margin: 50px 250px;
+}
+.subtext {
+  font-family: "Calibri", sans-serif;
+  font-size: 20px;
+  margin: 15px 0px;
+  color: #000;
+}
+.p2 {
+  font-family: "Calibri", sans-serif;
+  font-size: 17px;
+  font-weight: 800;
+  margin: 10px 0px;
+  color: #000;
+  padding-left: 15px;
+}
+h4 {
+  font-size: 40px;
+  text-transform: uppercase;
+  font-family: "Calibri", sans-serif;
+  margin: 30px 0px 15px 0px;
+  color: #000;
+}
+.ticketinfo {
+  grid-area: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 0px 30px 175px;
+}
+.cardinfo {
+  display: flex;
+  flex-direction: column;
+}
+.payinput {
+  width: 80%;
+  background-color: #fbfcff;
+  border-radius: 12px;
+  border-color: rgba(27, 32, 61);
+  border-style: solid;
+  border-width: 2px;
+  margin: 10px 0px;
+  padding: 24px;
+  max-width: 650px;
+}
+.pay {
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  background-color: #1b203d;
+  color: #ffffff;
+  width: 80%;
+  font-weight: 800;
+  border-radius: 7px;
+  border-width: 2px;
+  border-color: #1b203d;
+  box-shadow: 0px 3px 6px rgb(0 0 0 / 20%);
+  border-style: solid;
+  padding: 15px;
+  text-align: center;
+  margin: 0;
+  max-width: 650px;
+}
+
+.pay:hover {
+  cursor: pointer;
+}
+.cardinfo a {
+  text-decoration: none;
+}
+.halfinput {
+  width: 37%;
+  background-color: #fbfcff;
+  border-radius: 12px;
+  border-color: rgba(27, 32, 61);
+  border-style: solid;
+  border-width: 2px;
+  padding: 24px 0px 15px 22px;
+  max-width: 322px;
+}
+@media only screen and (max-width: 1325px) {
+  main {
+    margin: 15px;
+  }
+}
+@media only screen and (max-width: 775px) {
+  .paywrap {
+    grid-template-areas:
+      "1"
+      "2";
+    grid-template-columns: 1fr;
+    background-position: right;
+  }
+  .cardinfo {
+    margin: 15px 0px;
+    padding: 0px;
+    width: 80%;
+  }
+  .ticketinfo {
+    margin: auto;
+    padding: 0px;
+    width: 80%;
+  }
+  .totalprice p {
+    margin: 50px 0px;
+  }
+}
+@media only screen and (max-width: 560px) {
+  .paywrap {
+    background-image: none;
+  }
+}
