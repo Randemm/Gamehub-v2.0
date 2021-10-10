@@ -4,10 +4,14 @@ function validateForm() {
   var formError = false;
   var fnamePointer = "first name";
   var firstName = document.forms["contactForm"][fnamePointer].value;
-  if (validateString(firstName, fnamePointer, 0)) {
+  if (validateString(firstName, 0)) {
     document.getElementById("fnameerror").innerHTML =
       "First name cannot be empty.";
     formError = true;
+    document.getElementById("fname").classList.add("input-error");
+  } else {
+    document.getElementById("fname").classList.remove("input-error");
+    document.getElementById("fnameerror").innerHTML = "";
   }
 
   var lnamePointer = "last name";
@@ -15,18 +19,25 @@ function validateForm() {
   if (validateString(lastName, lnamePointer, 0)) {
     document.getElementById("lnameerror").innerHTML =
       "Last name cannot be empty.";
+    document.getElementById("lname").classList.add("input-error");
     formError = true;
+  } else {
+    document.getElementById("lnameerror").innerHTML = "";
+    document.getElementById("lname").classList.remove("input-error");
   }
   var emailPointer = "email";
   var email = document.forms["contactForm"][emailPointer].value;
   if (validateString(email, emailPointer, 0)) {
     formError = true;
   }
-  console.log(validateEmail(email));
 
   if (!validateEmail(email)) {
     document.getElementById("emailerror").innerHTML = "Email not valid.";
+    document.getElementById("email").classList.add("input-error");
     formError = true;
+  } else {
+    document.getElementById("emailerror").innerHTML = "";
+    document.getElementById("email").classList.remove("input-error");
   }
 
   var subjectPointer = "subject";
@@ -34,7 +45,11 @@ function validateForm() {
   if (validateString(subject, subjectPointer, 10)) {
     document.getElementById("subjecterror").innerHTML =
       "Subject cannot be empty or less than 10 characters.";
+    document.getElementById("subject").classList.add("input-error");
     formError = true;
+  } else {
+    document.getElementById("subjecterror").innerHTML = "";
+    document.getElementById("subject").classList.remove("input-error");
   }
   if (formError == false) {
     formContainer.innerHTML =
