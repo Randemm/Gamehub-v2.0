@@ -32,7 +32,7 @@
   letter-spacing: 3px;
   margin: 25px 100px 0px 0px;
   font-weight: 800;
-  color: #1b203d;
+  color: var(--gameblue);
 }
 .cart-list {
   margin: 0px 2px 15px 2px;
@@ -42,7 +42,7 @@
 }
 .checkout {
   color: #fbfcff;
-  background-color: #1b203d;
+  background-color: var(--gameblue);
   border: solid;
   border-radius: 6px;
   font-weight: bold;
@@ -57,7 +57,7 @@
 }
 .browse {
   color: #fbfcff;
-  background-color: #1b203d;
+  background-color: var(--gameblue);
   border: solid;
   border-radius: 6px;
   font-weight: bold;

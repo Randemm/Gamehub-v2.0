@@ -4,15 +4,15 @@ button {
   padding: 20px 30px;
   border-radius: 28px;
   border-style: solid;
-  border-color: #1b203d;
+  border-color: var(--gameblue);
   border-width: 2px;
   font-family: "RalewayLightBold", sans-serif;
   font-size: 15px;
   letter-spacing: 2px;
   margin-top: 300px;
   opacity: 0.9;
-  color: #1b203d;
-  background-color: #ffffff;
+  color: var(--gameblue);
+  background-color: var(--eggwhite);
   -webkit-transition: font-size 0.3s ease;
   -moz-transition: font-size 0.3s ease;
   -o-transition: font-size 0.3s ease;
@@ -76,7 +76,7 @@ button:hover {
   justify-content: center;
   align-items: center;
   height: 100%;
-  color: #fff;
+  color: var(--eggwhite);
 }
 #slides .slide_1 {
   background-image: url("images/indeximg/codmwbannercomp.jpg");
@@ -172,7 +172,7 @@ button:hover {
     padding: 10px 15px;
     border-radius: 28px;
     border-style: solid;
-    border-color: #1b203d;
+    border-color: var(--gameblue);
     border-width: 2px;
     font-family: "RalewayLightBold", sans-serif;
     font-size: 15px;
@@ -246,7 +246,7 @@ button:hover {
   font-family: Arial, Helvetica, sans-serif !important;
   font-weight: 700;
   font-size: 25px;
-  color: #1b203d;
+  color: var(--gameblue);
   letter-spacing: -1px;
   width: 100%;
 }
@@ -356,12 +356,12 @@ button:hover {
   left: 145px;
 }
 .prelabel {
-  background-color: #ffab40;
+  background-color: var(--orang);
   position: absolute;
   font-family: "RalewayBold", sans-serif;
   font-size: 10px;
   font-style: italic;
-  color: #1b203d;
+  color: var(--gameblue);
   padding: 8px 3px;
   bottom: 33px;
   right: 0px;
@@ -383,8 +383,8 @@ button:hover {
   font-size: 17px;
 }
 .percenttag {
-  background-color: #ffab40;
-  color: #1b203d;
+  background-color: var(--orang);
+  color: var(--gameblue);
   display: inline;
   padding: 2px 3px;
   border-radius: 8px;

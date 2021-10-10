@@ -7,8 +7,8 @@ main {
   display: flex;
 }
 button {
-  background-color: #1b203d;
-  color: #fbfcff;
+  background-color: var(--gameblue);
+  color: var(--eggwhite);
   border: none;
   border-radius: 6px;
   font-weight: bold;
@@ -37,7 +37,7 @@ p {
   margin-bottom: 15px !important;
 }
 .contactinfo {
-  background-color: #fbfcff;
+  background-color: var(--eggwhite);
   border-radius: 12px;
   border-color: rgba(27, 32, 61);
   border-style: solid;
@@ -49,11 +49,11 @@ p {
   padding-left: 1%;
   font-family: "Raleway", sans-serif;
   font-weight: normal;
-  color: #1b203d;
+  color: var(--gameblue);
 }
 .submit {
-  background-color: #1b203d;
-  color: #fbfcff;
+  background-color: var(--gameblue);
+  color: var(--eggwhite);
   border: none;
   border-radius: 6px;
   font-weight: bold;
@@ -74,7 +74,7 @@ p {
 }
 
 .userquestion {
-  background-color: #fbfcff;
+  background-color: var(--eggwhite);
   border-radius: 12px;
   border-style: solid;
   border-width: 2px;
@@ -89,7 +89,7 @@ p {
   vertical-align: top;
 }
 textarea {
-  background-color: #fbfcff;
+  background-color: var(--eggwhite);
   border-radius: 12px;
   border: solid;
   width: 100%;
@@ -119,7 +119,7 @@ fieldset {
 }
 ::placeholder {
   font-size: 20px;
-  color: #1b203d;
+  color: var(--gameblue);
 }
 .container {
   display: grid;
